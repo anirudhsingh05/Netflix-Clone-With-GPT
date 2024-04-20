@@ -1,11 +1,7 @@
-import "./App.css";
+import Body from "./Components/Body";
 
 function App() {
-  return (
-    <div className="text-3xl text-green-600">
-      New Project : NetFlix + Chat GPT
-    </div>
-  );
+  return <Body />;
 }
 
 export default App;
