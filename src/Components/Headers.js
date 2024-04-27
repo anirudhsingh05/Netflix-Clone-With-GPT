@@ -40,12 +40,12 @@ const Headers = () => {
 
   return (
     // bg-gradient-to-b from-black
-    <div className="absolute w-screen px-8 py-2 z-10 bg-gradient-to-b from-black flex justify-between">
+    <div className="absolute w-[100%] px-8 py-2 z-10 bg-gradient-to-b from-black flex justify-between">
       <img className="w-52" src={LOGO} alt="logo" />
       {user && (
         <div className="flex px-2 py-4 ">
           <img className="w-12 h-12" src={user?.photoURL} alt="userIcon" />
-          <button onClick={handleSignOut} className="px-2">
+          <button onClick={handleSignOut} className="pl-2 text-white">
             Sign Out
           </button>
         </div>
