@@ -40,8 +40,8 @@ const Headers = () => {
 
   return (
     // bg-gradient-to-b from-black
-    <div className="absolute w-[100%] px-8 py-2 z-10 bg-gradient-to-b from-black flex justify-between">
-      <img className="w-52" src={LOGO} alt="logo" />
+    <div className="absolute w-[100%] px-8 py-12 z-50 bg-gradient-to-b from-black flex justify-between">
+      <img className="w-52 p-2 mx-8 " src={LOGO} alt="logo" />
       {user && (
         <div className="flex px-2 py-4 ">
           <img className="w-12 h-12" src={user?.photoURL} alt="userIcon" />

@@ -14,3 +14,5 @@ export const API_OPTIONS = {
 };
 
 export const YOUTUBE_SRC = "https://www.youtube.com/embed/";
+
+export const IMG_URL = "https://image.tmdb.org/t/p/w500/";

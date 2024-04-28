@@ -117,6 +117,7 @@ const Login = () => {
           ref={password}
           type="password"
           placeholder={isSignInFrom ? "Password" : "Create Password"}
+          autoComplete="current-password"
           className="p-4 my-4 w-full rounded-md bg-transparent border-2 border-neutral-600"
         />
         <p className="text-red-500 font-bold text-lg py-2">{errorMessage}</p>
