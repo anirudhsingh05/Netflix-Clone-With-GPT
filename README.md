@@ -31,6 +31,13 @@
 - Embedded the youtube video
 - Made it autoplay and mute
 - Added tailwind css classes
+- Built Secondary Component
+- built Movie List
+- built movie card
+- added tmdb image url
+- added css (tailwind)
+- usePopular custom hook
+- useToprated custom hook
 
 # Features
 
