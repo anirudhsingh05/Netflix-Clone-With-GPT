@@ -38,6 +38,7 @@
 - added css (tailwind)
 - usePopular custom hook
 - useToprated custom hook
+- GPT Search feature
 
 # Features
 
