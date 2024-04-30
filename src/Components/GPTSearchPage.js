@@ -5,7 +5,7 @@ import GptSearchBar from "./GptSearchBar";
 const GPTSearchPage = () => {
   return (
     <div>
-      <div className="absolute brightness-50 -z-10">
+      <div className="fixed brightness-50 -z-10">
         <img src={BACKGROUND} alt="background" />
       </div>
       <GptSearchBar />

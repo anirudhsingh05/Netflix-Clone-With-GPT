@@ -39,6 +39,9 @@
 - usePopular custom hook
 - useToprated custom hook
 - GPT Search feature
+- GPT Search Bar
+- (\*)Multi language feature
+- Integrate GPT API's (get open AI key)
 
 # Features
 
