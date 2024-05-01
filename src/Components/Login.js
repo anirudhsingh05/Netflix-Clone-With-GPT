@@ -86,11 +86,15 @@ const Login = () => {
     <div>
       <Headers />
       <div className="absolute brightness-50">
-        <img src={BACKGROUND} alt="background" />
+        <img
+          className="h-screen md:h-[100%] object-cover"
+          src={BACKGROUND}
+          alt="background"
+        />
       </div>
       <form
         onSubmit={(e) => e.preventDefault()}
-        className="w-3/12 absolute p-12 bg-black bg-opacity-80 my-36 mx-auto
+        className="w-[85%] md:w-3/12 absolute p-12 bg-black bg-opacity-80 my-36 mx-auto
         right-0 left-0 text-white"
       >
         <h1 className="font-bold text-3xl pb-4">

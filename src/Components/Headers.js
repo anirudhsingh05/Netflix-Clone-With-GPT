@@ -51,10 +51,20 @@ const Headers = () => {
 
   return (
     // bg-gradient-to-b from-black
-    <div className="absolute w-[100%] px-8 py-12 z-50 bg-gradient-to-b from-black flex justify-between">
-      <img className="w-52 p-2 mx-8 " src={LOGO} alt="logo" />
+    <div
+      className={
+        showGptSearch
+          ? "absolute w-[100%] px-8 pt-8 z-50 bg-gradient-to-b from-black flex flex-col md:flex-row justify-between mt-10 md:mt-0"
+          : "absolute w-[100%] px-8 pt-8 z-50 bg-gradient-to-b from-black flex flex-col md:flex-row justify-between mt-0 md:mt-0"
+      }
+    >
+      <img
+        className="w-52 p-2 -mt-10 md:mt-2 mx-auto md:mx-8 "
+        src={LOGO}
+        alt="logo"
+      />
       {user && (
-        <div className="flex px-2 py-4 ">
+        <div className="flex justify-between px-2 py-4 -mt-3 md:mt-0">
           {showGptSearch && (
             <select
               className="p-2 my-2 bg-gray-900 text-white rounded-lg"
@@ -69,11 +79,15 @@ const Headers = () => {
           )}
           <button
             onClick={handleGPTSearchButton}
-            className="py-2 px-4 mx-8 my-3 bg-purple-800 text-white rounded-lg"
+            className="py-2 px-4 mx-0 md:mx-8 my-1 md:my-3 bg-purple-800 text-white rounded-lg"
           >
             {showGptSearch ? "Home Page" : "Gemini"}
           </button>
-          <img className="w-12 h-12" src={user?.photoURL} alt="userIcon" />
+          <img
+            className="hidden md:inline-block w-12 md:mt-3 h-12"
+            src={user?.photoURL}
+            alt="userIcon"
+          />
           <button onClick={handleSignOut} className="pl-2 text-white">
             Sign Out
           </button>

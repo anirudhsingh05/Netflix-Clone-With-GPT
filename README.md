@@ -41,9 +41,14 @@
 - GPT Search feature
 - GPT Search Bar
 - (\*)Multi language feature
-- Integrate GPT API's (get open AI key)
-- Used Gemini instead of GPT (Budget issue)
+- Get Open AI API key
+- GPT Search API call
+- Used Gemini API instead of GPT (OpenAI API were not free)
 - Implemented Gemini for movie suggestion
+- Memoization
+- Added .env file
+- Adding .env file to gitignore
+- Made Our App Responsive
 
 # Features
 
