@@ -42,6 +42,8 @@
 - GPT Search Bar
 - (\*)Multi language feature
 - Integrate GPT API's (get open AI key)
+- Used Gemini instead of GPT (Budget issue)
+- Implemented Gemini for movie suggestion
 
 # Features
 

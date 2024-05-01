@@ -26,3 +26,5 @@ export const SUPPORTED_LANG = [
 ];
 
 export const OPENAI_KEY = process.env.REACT_APP_OPENAI_KEY;
+
+export const GEMINI_KEY = process.env.REACT_APP_GEMINI_KEY;

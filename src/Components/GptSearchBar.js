@@ -3,6 +3,7 @@ import lang from "../Utils/languageConstannts";
 import { useRef } from "react";
 import { API_OPTIONS } from "../Utils/constants";
 import { addGptMovieResult } from "../Utils/GPTSlice";
+import gemini from "../Utils/gemini";
 // import openai from "../Utils/openai";
 
 const GptSearchBar = () => {
@@ -37,11 +38,24 @@ const GptSearchBar = () => {
     // });
 
     // console.log(gptResults);
-    const gptResults =
-      "Andaz Apna Apna, Hera Pheri, Chupke Chupke, Jaane Bhi Do Yaaro, Padosan";
-    console.log(gptResults);
 
-    const moviesList = gptResults.split(",");
+    //----------------------------------------------------------------------------------------------------------
+
+    // For text-only input, use the gemini-pro model
+    const model = gemini.getGenerativeModel({ model: "gemini-pro" });
+
+    const prompt =
+      "Act as a Movie Recommendation system and suggest some movies for the query : " +
+      searchText.current.value +
+      "only give names of 5 movies, comma seperated like the example result given ahead. Example Result: Gadar, Sholay, Don, Golmaal, Kungfu Panda";
+    const result = await model.generateContent(prompt);
+    const response = await result.response;
+    const text = response.text();
+    console.log(text);
+
+    // ---------------------------------------------------------------------------------------------------------
+
+    const moviesList = text.split(",");
 
     const promiseArray = moviesList.map((movie) => searchMovieTMDB(movie));
 
